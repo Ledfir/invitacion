@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Church, PartyPopper } from 'lucide-react';
+import { Church, PartyPopper, Clock } from 'lucide-react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -76,6 +76,28 @@ export default function Ubicaciones() {
             Ubicaciones
           </h2>
           <div className="w-16 h-px bg-primary-200 mx-auto mt-6" />
+        </motion.div>
+
+        {/* Alerta sobre llegar temprano */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mb-12 p-6 bg-gradient-to-r from-primary-200/20 to-primary-100/20 border-l-4 border-primary-300 rounded-lg"
+        >
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 rounded-full bg-primary-300 flex items-center justify-center flex-shrink-0 mt-1">
+              <Clock className="w-5 h-5 text-white" />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-primary-400 mb-2">¡Importante! ⏰</h3>
+              <p className="text-primary-400/80 text-sm leading-relaxed">
+                Te pedimos encarecidamente que <strong>llegues con anticipación</strong> a la ceremonia religiosa. 
+                La entrada será a partir de las <strong>18:30 hrs</strong> para garantizar que todos podamos comenzar puntualmente a las <strong>19:00 hrs</strong>.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
