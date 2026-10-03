@@ -20,7 +20,7 @@ const lugares = [
     icon: PartyPopper,
     nombre: 'Salón Hacienda Bugambilias | XV años de Victoria',
     direccion: 'Av. Acueducto 33, Rancho Viejo, Jardines de la Silla, 67250 Jardines de la Silla, N.L.',
-    hora: '21:00 hrs',
+    hora: '18:30 hrs',
     coords: [25.632943, -100.1764451],
     maps: `https://www.google.com/maps/place/Hacienda+Bugambilias/@25.6313564,-100.1761543,17.67z/data=!4m16!1m9!3m8!1s0x8662c1794e4cf23b:0xd0ff4b7efc7501d8!2sHacienda+Bugambilias!8m2!3d25.632943!4d-100.1764451!9m1!1b1!16s%2Fg%2F11cn8ysgkz!3m5!1s0x8662c1794e4cf23b:0xd0ff4b7efc7501d8!8m2!3d25.632943!4d-100.1764451!16s%2Fg%2F11cn8ysgkz?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D`
   },
