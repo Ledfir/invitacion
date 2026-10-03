@@ -53,7 +53,7 @@ export default function Hero() {
           className="font-display text-5xl sm:text-7xl md:text-8xl text-white mb-4 drop-shadow-lg"
           style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic' }}
         >
-          Victoria
+          Victoria Raquel Martinez de la Rosa
         </motion.h1>
 
         <motion.div
