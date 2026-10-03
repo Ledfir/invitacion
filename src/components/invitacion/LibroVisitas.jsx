@@ -121,7 +121,7 @@ export default function LibroVisitas() {
               id="mensaje-libro"
               value={mensaje}
               onChange={(e) => setMensaje(e.target.value)}
-              placeholder="Escribe una dedicatoria especial para Valentina..."
+              placeholder="Escribe una dedicatoria especial para Victoria..."
               rows={4}
               className="bg-white border-primary-100 resize-none"
             />
@@ -145,7 +145,7 @@ export default function LibroVisitas() {
           </div>
         ) : mensajes.length === 0 ? (
           <p className="text-center text-primary-400/50 italic" style={{ fontFamily: 'Georgia, serif' }}>
-            Sé el primero en dejar un mensaje para Valentina.
+            Sé el primero en dejar un mensaje para Victoria.
           </p>
         ) : (
           <div className="flex flex-col items-center">
