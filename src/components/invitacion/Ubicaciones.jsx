@@ -15,20 +15,10 @@ const pinkIcon = L.divIcon({
 
 const lugares = [
   {
-    id: 'iglesia',
-    titulo: 'Ceremonia Religiosa',
-    icon: Church,
-    nombre: 'Iglesia Bautista Dios Proveerá',
-    direccion: 'Miguel Hidalgo 101, Heroes de Nacozari, Jardines de la Silla, 67288 Jardines de la Silla, N.L.',
-    hora: '19:00 hrs',
-    coords: [25.6366977, -100.1825569],
-    maps: `https://www.google.com/maps/place/Iglesia+Bautista+Dios+Proveer%C3%A1/@25.6357726,-100.1817236,18.54z/data=!4m16!1m9!3m8!1s0x8662c1794e4cf23b:0xd0ff4b7efc7501d8!2sHacienda+Bugambilias!8m2!3d25.632943!4d-100.1764451!9m1!1b1!16s%2Fg%2F11cn8ysgkz!3m5!1s0x8662c177e5f70427:0x4106c2d03172c62f!8m2!3d25.6366977!4d-100.1825569!16s%2Fg%2F11b7gn00c5?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D`
-  },
-  {
     id: 'recepcion',
-    titulo: 'Recepción',
+    titulo: 'Ceremonia Religiosa y Recepción',
     icon: PartyPopper,
-    nombre: 'Salón Hacienda Bugambilias',
+    nombre: 'Salón Hacienda Bugambilias | XV años de Victoria',
     direccion: 'Av. Acueducto 33, Rancho Viejo, Jardines de la Silla, 67250 Jardines de la Silla, N.L.',
     hora: '21:00 hrs',
     coords: [25.632943, -100.1764451],
@@ -42,7 +32,7 @@ function Mapa({ coords, nombre, direccion }) {
       center={coords}
       zoom={15}
       scrollWheelZoom={false}
-      style={{ height: '260px', width: '100%', borderRadius: '1rem' }}
+      style={{ height: '400px', width: '100%', borderRadius: '1rem' }}
       className="z-0"
     >
       <TileLayer
@@ -100,7 +90,7 @@ export default function Ubicaciones() {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {lugares.map((l, i) => (
             <motion.div
               key={l.id}
