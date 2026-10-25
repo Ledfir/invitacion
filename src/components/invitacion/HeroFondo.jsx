@@ -5,7 +5,7 @@ import { Image } from '@/components/ui/image';
 // Para agregar el video, solo añade un elemento:
 // { tipo: 'video', src: 'https://...' }
 const slides = [
-  { tipo: 'foto', src: '/images/hero-1.jpg' },
+  { tipo: 'foto', src: '/images/hero-1.jpeg' },
   { tipo: 'foto', src: '/images/hero-2.png' },
   // { tipo: 'video', src: 'URL_DEL_VIDEO' },
 ];
