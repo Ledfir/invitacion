@@ -16,7 +16,7 @@ const pinkIcon = L.divIcon({
 const lugares = [
   {
     id: 'recepcion',
-    titulo: 'Ceremonia Religiosa y Recepción',
+    titulo: 'Ceremonia de acción de gracias y Recepción',
     icon: PartyPopper,
     nombre: 'Salón Hacienda Bugambilias | XV años de Victoria',
     direccion: 'Av. Acueducto 33, Rancho Viejo, Jardines de la Silla, 67250 Jardines de la Silla, N.L.',
