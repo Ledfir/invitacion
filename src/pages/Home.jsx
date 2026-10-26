@@ -18,7 +18,7 @@ export default function Home() {
       <Preloader />
       <Petalos />
       <Hero />
-      <Galeria />
+      {/* <Galeria /> */}
       <Quinceanera />
       <Ubicaciones />
       <Regalos />
